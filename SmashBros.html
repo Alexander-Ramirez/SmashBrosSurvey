@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Super.css">
+  </head>
+
+  <body>
+    <h1 id="title">Super Smash Bros
+      </h1>
+    <p id="description">Trying to find the best Smash Bros game</p>
+    <form id="survey-form">
+
+      <fieldset>
+        <label id="name-label"> Name
+          <input type="text" id="name" required placeholder="Name" />
+        </label>
+
+        <label id="email-label"> Email
+          <input type="email" id="email" required placeholder="Email" />
+        </label>
+
+        <label id="number-label"> Age
+          <input id="number" type="number" min="13" max="120" placeholder="Age" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>What is your favorite Super Smash Bros. game?</p>
+        <label> 
+          <select id="dropdown">
+            <option disabled selected value>Select favorite game</option>
+            <option>Super Smash Bros. (N46)</option>
+            <option>Super Smash Bros. Melee (GameCube)</option>
+            <option>Super Smash Bros. Brawl (Wii)</option>
+            <option>Super Smash Bros. Wii U/3DS</option>
+            <option>Super Smash Bros. Ultimate (Switch)</option>
+            </optgroup>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>What is your least favorite Super Smash Bros. game?</p>
+        <label>
+          <input type="radio" value="SSB" name="L-game" class="inline"/> Super Smash Bros. (N46)
+        </label>
+        <label>
+          <input type="radio" value="SSBM" name="L-game" class="inline"/> Super Smash Bros. Melee (GameCube)
+        </label>
+        <label>
+          <input type="radio" value="SSBB" name="L-game" class="inline"/> Super Smash Bros. Brawl (Wii)
+        </label>
+        <label>
+          <input type="radio" value="SSBW" name="L-game" class="inline"/> Super Smash Bros. Wii U/3DS
+        </label>
+        <label>
+          <input type="radio" value="SSBU" name="L-game" class="inline"/> Super Smash Bros. Ultimate (Switch)
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>Why do you like Super Smash Bros.? </p>
+        <label for="why"> 
+          <input value="Nostalgia" type="checkbox" class="inline"/> Nostalgia
+        </label>
+        <label for="why">
+          <input value="Social Aspect" type="checkbox" class="inline"/> Social Aspect
+        </label>
+        <label for="why">
+          <input value="Competive" type="checkbox" class="inline"/> Competive
+        </label>
+        <label for="why">
+          <input value="Gameplay/Mechanics" type="checkbox" class="inline"/> Gameplay/Mechanics
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>If you could change anything in the game, what would you change?</p>
+        <label for="change">
+            <textarea id="change" name="change" placeholder="The one thing I would change is..."></textarea>
+          </label>
+        </fieldset>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
